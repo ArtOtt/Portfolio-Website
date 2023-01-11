@@ -14,6 +14,12 @@ html{
     font-size: 63%;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* End General */
 
 /* Section 1 */
@@ -25,11 +31,7 @@ html{
         rgba(255,255,255, .3)),
         url(images/bg.jpg) center no-repeat;
         background-size: cover;
-
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .section-1-heading{
@@ -79,3 +81,42 @@ html{
 }
 
 /* End of Section 1 */
+
+/* NavBar */
+.navbar{
+    width: 100%;
+    height: 4rem;
+    background-color: #e41c6f;
+    box-shadow: .2rem .2rem .5rem #555;
+}
+
+.navbar-link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover{
+    color: #fff;
+}
+
+.navbar-link::before{
+    content: "";
+    width: 0;
+    height: .2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom:-.3rem;
+    transition: width 0.3s;
+}
+.navbar-link:hover::before{
+    width: 130%;
+}
+
+/* End of NavBar */
