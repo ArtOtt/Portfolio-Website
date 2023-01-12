@@ -20,6 +20,17 @@ html{
     align-items: center;
 }
 
+.section-heading{
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid #333;
+    text-shadow: .2rem .2rem .5rem #555;
+}
+
+
 /* End General */
 
 /* Section 1 */
@@ -133,7 +144,7 @@ html{
 
 }
 
-.section-2-heading{
+.section-heading{
     font-size: 5rem;
     color: #333;
     text-transform: uppercase;
@@ -211,4 +222,93 @@ html{
     transform: skew(-10deg);
     box-shadow: .2rem .2rem .5rem #555;
 }
+
 /* End of Section 2 */
+
+/* Section 3  */
+.section-3{
+    width: 100%;
+    height: 100%;
+    padding: 10rem 0;
+    background-color: #eef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-wrapper{
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #fff;
+    box-shadow: .3rem .3rem .5rem #777;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow .5s;
+}
+
+.project:hover{
+    box-shadow: 3rem 3rem 3rem #777;
+}
+
+.project-text{
+    text-align: center;
+    letter-spacing: .1rem;
+    position: absolute;
+    top: -10rem;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.project:hover .project-text{
+    top: 5rem;
+    transition: top .3s .3s;
+}
+
+.project-name{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize ;
+}
+
+.project-technologies{
+    font-size: 1.8rem;
+    color: #e41c6f;
+}
+
+.project-img{
+    width: 40rem;
+    transition: opacity .3s;
+}
+
+.project:hover .project-img{
+    opacity: .2;
+}
+
+.project-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: .1rem;
+    border: .3rem solid #e41c6f;
+    padding: .1rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s;
+}
+
+.project:hover .project-link{
+    bottom: 5rem;
+    transition: bottom .3s .3s;
+}
+
+/* End of Section 3  */
