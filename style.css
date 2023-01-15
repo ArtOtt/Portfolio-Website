@@ -507,5 +507,25 @@ html{
     }
 }
 
+@media(max-width: 385px){
+    .section-heading{
+        font-size: 4rem; 
+        margin-bottom: 6rem; 
+    }
+
+    .progress-bars-wrapper {
+        margin-bottom: 6rem;
+    }
+
+    .project:hover .project-link {
+        bottom: 2rem;
+        transition: bottom .3s .3s;
+    }
+
+}
+
+
+
+
 
 /* End of Responsive */
