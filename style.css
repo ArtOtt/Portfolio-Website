@@ -90,6 +90,14 @@ html{
     padding:.5rem 1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
+    transition: color .3s;
+    transition: border .3s;
+}
+
+.section-1-btn:hover{
+    
+    color:#f46036;
+    border:.3rem solid #f46036;
 }
 
 /* End of Section 1 */
@@ -378,6 +386,47 @@ html{
     text-transform: uppercase;
     letter-spacing: 1rem;
     cursor: pointer;
+}
+
+
+
+#status{
+    font-size: 2rem;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(69, 238, 69);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgba(217, 32, 32, 0.842);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 /* End of Section 4 */
 

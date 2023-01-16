@@ -18,6 +18,7 @@
     <div class="container">
 
       <!-- Section-1 -->
+
       <section class="section-1 center"  id="section-1">
         <h1 class="section-1-heading">
           Web Developer
@@ -29,15 +30,17 @@
       <!-- End of Section 1 -->
 
       <!-- NavBar -->
+
       <nav class="navbar center">
         <a href="#section-1" class="navbar-link">Start</a>
-        <a href="#section-2" class="navbar-link">Ü-Mich</a>
+        <a href="#section-2" class="navbar-link">ÜMich</a>
         <a href="#section-3" class="navbar-link">Portfolio</a>
         <a href="#section-4" class="navbar-link">Kontakt</a>
       </nav>
       <!-- End of NavBar -->
 
       <!-- Section 2 -->
+
       <section class="section-2" id="section-2">
         <h1 class="section-heading">Über Mich</h1>
         <div class="progress-bars-wrapper">
@@ -122,6 +125,7 @@
       <!-- End of Section 2 -->
 
       <!-- Section 3 -->
+
       <section class="section-3" id="section-3">
         <h1 class="section-heading">Meine Projekte</h1>
         <div class="projects-wrapper center">
@@ -212,15 +216,19 @@
       <!-- End of Section 3 -->
 
       <!-- Section 4 -->
+
       <section class="section-4" id="section-4">
         <h1 class="section-4-heading section-heading">Kontakt</h1>
-        <form class="contact-form center">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="E-mail">
-          <textarea placeholder="Nachricht"></textarea>
-          <input type="submit" value="Submit" class="contact-form-btn">
+        <form class="contact-form center" id="my-form" action="https://formspree.io/f/mlekdgkz" method="post">
+          <input type="text" name="firstname" id="name" placeholder="Name"> 
+          <input type="email" id="email" name="mail" placeholder="E-mail"> 
+          <textarea placeholder="Nachricht" name="massage"></textarea>
+          <input type="submit" value="Submit" name="submit" class="contact-form-btn">  
         </form>
+        <div id="status" ></div>
       </section>
+      <script src="./main.js"></script> 
+      
       <!-- End of Section 4 -->
 
       <!-- Section 5 -->
@@ -249,12 +257,8 @@
       </footer>
       <!-- End of Section 5 -->
 
-
-      
     </div>
-   
-
-
     <script src="script.js"></script>
+    <script src="./sendmail.js"></script>
   </body>
 </html>
