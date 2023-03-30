@@ -388,7 +388,7 @@ html{
 }
 
 .project:hover .project-img{
-    opacity: .2;
+    opacity: .15;
 }
 
 .project-link{
@@ -396,16 +396,16 @@ html{
     font-weight: 500;
     color: #5b85aa;
     letter-spacing: .1rem;
-    border: .3rem solid #171123;
+    /* border: .3rem solid #171123; */
     padding: .1rem;
-    background-color: #fff;
+    /* background-color: #fff; */
     position: absolute;
     bottom: -5rem;
     transition: bottom 0.3s;
 }
 
 .project:hover .project-link{
-    bottom: 5rem;
+    bottom: 2rem;
     transition: bottom .3s .3s;
 }
 
