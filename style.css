@@ -94,12 +94,13 @@ html{
 }
 
 .about{
-    width: 60rem;
+    /* width: 60rem; */
     font-family: "Caveat", cursive;
     font-size: 2.5rem;
-    line-height: 1;
-    color: #a9abae;
+    line-height: 3.5rem;
+    color: white;
     margin-bottom: 5rem;
+    margin-top: 3rem;
 }
 #about{
     display: none;
@@ -162,10 +163,10 @@ html{
     /* margin: auto; */
 }
 .dev-img-wrapper img{
-    width: 40rem;
+    width: 28rem;
     height: 40rem;
-    margin: 0 0 3rem 10.8rem;
-    border-radius: 10.8px;
+    margin-left: 25%;
+    border-radius: 90px;
 }
 
 /* End of Landing */
@@ -241,9 +242,19 @@ html{
     color: black;
     text-transform: uppercase;
     letter-spacing: .5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 8rem;
     border-bottom: .3rem solid black;
     text-shadow: .2rem .2rem .5rem #555;
+}
+
+.aboutMeInfo{
+    font-family: "Caveat", cursive;
+    font-size: 2.5rem;
+    color: #171123;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .progress-bars-wrapper{
@@ -536,9 +547,9 @@ html{
         width: 40rem;
     }
     .about{
-        width:45rem;
+        /* width:45rem; */
         text-align: center;
-        margin: 2rem auto;
+        margin: 4.5rem auto 0 auto;
     }
     .btn{
         margin-top: 7rem;
@@ -595,6 +606,9 @@ html{
     #about{
         display: block;
         margin: 6rem auto;
+        text-align: left;
+        line-height: 4rem;
+        width: 100%;
     }
     .btn{
         margin-top: 0rem;
@@ -616,7 +630,7 @@ html{
     }
 
     .section-2 {
-        padding: 10rem;
+        padding: 10rem 2rem;
     }
 
     .section-2-heading{
@@ -689,11 +703,16 @@ html{
         flex-direction: column;
         align-items: center;
     }
+    .aboutMeInfo {
+        /* width:120%; */
+        text-align: left;
+    }
     .developer-info h1{
         width: 58%; 
     }
     #about{
         max-width: 90%;
+        text-align: center;
         /* margin: 6rem auto; */
     }
     .prof{
