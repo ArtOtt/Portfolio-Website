@@ -414,10 +414,38 @@ html{
     bottom: -5rem;
     transition: bottom 0.3s;
 }
+.project-link2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #5b85aa;
+    letter-spacing: .1rem;
+    /* border: .3rem solid #171123; */
+    padding: .1rem;
+    /* background-color: #fff; */
+    position: absolute;
+    bottom: -5rem;
+    transition: bottom 0.3s;
+    
+}
+.project:hover .project-link2{
+    bottom: 1rem;
+    transition: bottom .3s .3s;
+}
 
 .project:hover .project-link{
-    bottom: 2rem;
+    bottom: 4rem;
     transition: bottom .3s .3s;
+}
+
+.project-link-text {
+   
+ 
+}
+
+.project-link-text:hover{
+   
+    color: #f46036;
+    transition: color 0.3s;
 }
 
 /* End of Section 3  */
